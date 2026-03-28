@@ -151,6 +151,34 @@ interface ThoughtStream {
 - [ ] 示例数据准备
 - [ ] 部署到 CF Pages
 
+## 当前状态 (v0.1.0 — 2026-03-28)
+
+**已完成 Phase 0-4，MVP 已部署上线。**
+
+- ✅ 5 种思维节点（分析/假设/验证/决策/行动）+ SVG 自定义形状
+- ✅ 4 种连线类型（推导/支持/矛盾/分支）
+- ✅ dagre 自动布局（左到右）
+- ✅ 时间轴回放（播放/暂停/进度条）
+- ✅ 详情面板（点击节点查看推理/备选方案/确信度）
+- ✅ 认知地图视图（知识结构 + 确定性标注）
+- ✅ 对话解析器（Markdown → 思维流）
+- ✅ 导入对话功能
+- ✅ 2 个示例数据（调试 + 架构设计）
+- ✅ TSC 零错误，Vite build 通过
+- ✅ GitHub: audiomagician1-ai/EchoCanvas
+- ✅ 部署: echocanvas.pages.dev
+
+### 自动化任务（Scheduler 管理）
+- T-027 `echocanvas-audit-code`: 代码审查 → 创建 Issues
+- T-029 `echocanvas-fix`: 修复审查 Issues（audit-code 完成后自动触发）
+- T-028 `echocanvas-dev`: 功能增强（搜索/快捷键/导出/统计）
+
+### v0.2.0 计划（由 echocanvas-dev 任务推进）
+- [ ] Search & Filter（搜索高亮 + 类型过滤）
+- [ ] Keyboard Shortcuts（Space/Arrows/Esc/Slash）
+- [ ] Export（PNG + JSON 导出）
+- [ ] Statistics Panel（节点统计/置信度/决策数）
+
 ## 数据安全原则
 
 - **不存储任何原始对话**: 只存储解析后的结构化思维节点
